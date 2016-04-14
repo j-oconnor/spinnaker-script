@@ -33,3 +33,5 @@ script:
 ```
 
 *J's Note:  I used an orca-local.yml in /opt/spinnaker/config with just this one block in it.  You can find the igor alias in your spinnaker-local.yml (assuming you have already configured one).  Job should match the JOBNAME you set in the curl to import the job to Jenkins.
+
+*J's Note:  When configuring the script task on Spinnaker, I had to populate just the "Script Path" (./shell) and "Command" (echo_env.sh), I also populated the "Repository URL" with this github URL, but I'm not sure if that actually makes any difference.
